@@ -26,24 +26,24 @@ description: >- # used by seo meta and the atom feed
 url: "https://ooopsu.github.io"
 
 github:
-  username: github_username # change to your GitHub username
+  username: ooopsu # change to your GitHub username
 
 twitter:
-  username: twitter_username # change to your Twitter username
+  username: # change to your Twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: 
+  name: ooopsu
   
 # Site Verification Settings
-webmaster_verifications:
-  google: # fill in your Google verification code
-  bing: # fill in your Bing verification code
-  alexa: # fill in your Alexa verification code
-  yandex: # fill in your Yandex verification code
-  baidu: # fill in your Baidu verification code
-  facebook: # fill in your Facebook verification code
+# webmaster_verifications:
+  # google: # fill in your Google verification code
+  # bing: # fill in your Bing verification code
+  # alexa: # fill in your Alexa verification code
+  # yandex: # fill in your Yandex verification code
+  # baidu: # fill in your Baidu verification code
+  # facebook: # fill in your Facebook verification code
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
