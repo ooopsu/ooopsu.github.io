@@ -185,6 +185,12 @@ tags: [FPS, G-Sync, FreeSync, 프레임제한, NVIDIA, AMD]
 
 <div class="fps-report">
 
+<!-- Source Badge -->
+<div style="display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, rgba(59,130,246,0.1), rgba(139,92,246,0.1)); border: 1px solid rgba(99,102,241,0.3); padding: 10px 18px; border-radius: 50px; margin-bottom: 35px; font-size: 13px;">
+<span style="color: #818cf8; font-weight: 700;">📌 출처</span>
+<a style="color: #a5b4fc; text-decoration: none; border-bottom: 1px dashed rgba(165,180,252,0.4);" href="https://www.reddit.com/r/nvidia/comments/1lokih2/putting_misconceptions_about_optimal_fps_caps/" target="_blank" rel="noopener">r/nvidia - Putting Misconceptions About Optimal FPS Caps</a>
+</div>
+
 <!-- Critical Alert -->
 <div class="alert-banner">
 <h3 style="color: #fb7185; margin-top: 0; font-size: 1.4rem;">⚠️ 중요 업데이트 (2026.01.05)</h3>
@@ -362,11 +368,6 @@ tags: [FPS, G-Sync, FreeSync, 프레임제한, NVIDIA, AMD]
 </div>
 </section>
 
-<!-- Footer -->
-<footer style="margin-top: 80px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; text-align: left;">
-<p style="font-size: 13px; color: #6b7280; margin-bottom: 8px; font-weight: bold;">출처</p>
-<a style="font-size: 13px; color: #4b5563; text-decoration: underline;" href="https://www.reddit.com/r/nvidia/comments/1lokih2/putting_misconceptions_about_optimal_fps_caps/" target="_blank" rel="noopener">www.reddit.com/r/nvidia/comments/1lokih2/putting_misconceptions_about_optimal_fps_caps/</a>
-</footer>
 
 </div>
 
