@@ -1,6 +1,5 @@
 ---
-title: "FPS 제한 계산기 - 최적의 프레임 제한을 위한 완벽 가이드"
-date: 2026-03-07 12:00:00 +0900
+title: "최적의 FPS 제한과 G-Sync에 대한 잘못된 상식을 바로잡기"
 categories: [PC]
 tags: [FPS, G-Sync, FreeSync, 프레임제한, NVIDIA, AMD]
 ---
@@ -405,3 +404,4 @@ document.addEventListener('DOMContentLoaded', function() {
   calculateFps();
 });
 </script>
+
