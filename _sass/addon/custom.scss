@@ -48,12 +48,7 @@ $sidebar-collapsed-width: 64px;
   }
 }
 
-// 모바일에서는 버튼 숨김
-@media (max-width: 849px) {
-  #sidebar-toggle-btn {
-    display: none !important;
-  }
-}
+
 
 // =============================================
 // 접힌 상태 (body.sidebar-collapsed)
