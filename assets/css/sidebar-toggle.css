@@ -1,0 +1,115 @@
+/* ===== Sidebar Toggle Button ===== */
+#sidebar-toggle {
+  position: absolute;
+  top: 12px;
+  right: -42px;
+  z-index: 1100;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  background: rgba(30, 33, 40, 0.85);
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(6px);
+  padding: 0;
+  line-height: 1;
+}
+
+#sidebar-toggle:hover {
+  background: rgba(59, 130, 246, 0.3);
+  color: #fff;
+  border-color: rgba(59, 130, 246, 0.5);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.3);
+}
+
+/* ===== Sidebar Collapse Styles (Desktop only) ===== */
+@media (min-width: 992px) {
+  #sidebar {
+    position: relative;
+    transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+                min-width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+  }
+
+  /* Collapsed state */
+  body.sidebar-collapsed #sidebar {
+    width: 70px !important;
+    min-width: 70px !important;
+  }
+
+  body.sidebar-collapsed #sidebar .profile-wrapper {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+    transition: opacity 0.2s ease, height 0.3s ease;
+  }
+
+  body.sidebar-collapsed #sidebar .nav-link span {
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+    transition: opacity 0.2s ease;
+  }
+
+  body.sidebar-collapsed #sidebar .nav-link {
+    justify-content: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  body.sidebar-collapsed #sidebar .nav-link i {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+
+  body.sidebar-collapsed #sidebar .nav-item {
+    text-align: center;
+  }
+
+  body.sidebar-collapsed #sidebar .site-subtitle {
+    display: none;
+  }
+
+  body.sidebar-collapsed #sidebar .sidebar-bottom {
+    justify-content: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  body.sidebar-collapsed #sidebar .sidebar-bottom .icon-border {
+    display: none;
+  }
+
+  body.sidebar-collapsed #sidebar-toggle {
+    right: -42px;
+  }
+
+  body.sidebar-collapsed #sidebar-toggle i::before {
+    content: "\f0c9";
+  }
+
+  /* Expanded state icon */
+  body:not(.sidebar-collapsed) #sidebar-toggle i::before {
+    content: "\f100";
+  }
+
+  /* Main wrapper transition */
+  #main-wrapper {
+    transition: margin-left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* Hide toggle on mobile (sidebar already behaves differently) */
+@media (max-width: 991px) {
+  #sidebar-toggle {
+    display: none !important;
+  }
+}
