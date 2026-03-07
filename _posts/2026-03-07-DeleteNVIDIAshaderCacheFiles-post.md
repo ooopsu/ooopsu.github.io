@@ -1,6 +1,5 @@
 ---
 title: "NVIDIA 쉐이더 캐시 파일 삭제하기"
-date: 2026-03-07 12:40:00 +0900
 categories: [PC]
 tags: [NVIDIA 쉐이더 캐시 파일 삭제하기]
 ---
