@@ -58,7 +58,6 @@ C:\Users\사용자명\AppData\Local\NVIDIA\DXCache
 -   우측 메뉴에서 --장치 유형 선택--을 GPU로, --장치 선택--을 NVIDIA로 설정합니다.
 -   '쉐이더 캐시 정리 (전용)' 버튼을 클릭합니다.  
       
-    
 <img width="670" height="690" alt="2" src="/assets/img/cache_2.png" />
 
 정리가 완료되면 팝업 창이 나타납니다.  
