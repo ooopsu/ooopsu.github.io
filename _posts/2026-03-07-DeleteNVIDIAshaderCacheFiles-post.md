@@ -4,7 +4,7 @@ categories: [PC]
 tags: [NVIDIA 쉐이더 캐시 파일 삭제하기]
 ---
 
-## NVIDIA 쉐이더 캐시 파일 삭제하기
+
 
 출처 : [https://nvidia.custhelp.com/app/answers/detail/a\_id/5735/](https://nvidia.custhelp.com/app/answers/detail/a_id/5735/)
 
