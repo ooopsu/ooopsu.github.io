@@ -33,13 +33,17 @@
 @media (min-width: 850px) {
   #sidebar {
     transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* 글자가 부드럽게 사라지도록 처리 */
+  #sidebar .nav-link span, #sidebar .site-title, #sidebar .site-subtitle {
     white-space: nowrap;
-    overflow-x: hidden;
   }
 
   /* Collapsed state */
   body.sidebar-collapsed #sidebar {
     width: 70px !important;
+    overflow-x: hidden;
   }
 
   body.sidebar-collapsed #sidebar .profile-wrapper {
@@ -49,6 +53,11 @@
     margin: 0 !important;
     padding: 0 !important;
     transition: opacity 0.2s ease, height 0.3s ease;
+  }
+
+  /* 핵심 수정: 메뉴 아이콘들이 토글 버튼과 겹치지 않게 아래로 밀어줌! */
+  body.sidebar-collapsed #sidebar nav {
+    margin-top: 60px !important;
   }
 
   body.sidebar-collapsed #sidebar .nav-link span {
@@ -112,7 +121,7 @@
   }
 }
 
-/* Hide toggle on mobile (sidebar already behaves differently) */
+/* Hide toggle on mobile */
 @media (max-width: 849px) {
   #sidebar-toggle {
     display: none !important;
