@@ -12,9 +12,6 @@
     const sidebar = document.getElementById('sidebar');
     if (!sidebar) return;
 
-    // 데스크탑(849px 이상)에서만 동작
-    if (window.innerWidth < 849) return;
-
     // 저장된 상태 복원
     if (localStorage.getItem(STORAGE_KEY) === 'true') {
       document.body.classList.add(COLLAPSED_CLASS);
