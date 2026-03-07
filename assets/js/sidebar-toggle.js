@@ -1,49 +1,21 @@
-// =============================================
-// Sidebar Toggle - assets/js/sidebar-toggle.js
-// localStorage 차단 환경 대응 버전
-// =============================================
-
 (function () {
   'use strict';
 
-  const STORAGE_KEY = 'chirpy-sidebar-collapsed';
-  const COLLAPSED_CLASS = 'sidebar-collapsed';
+  var STORAGE_KEY = 'sidebar-collapsed';
+  var body = document.body;
+  // 우리가 만든 네모 버튼(sidebar-toggle)을 찾아옵니다.
+  var btn = document.getElementById('sidebar-toggle');
 
-  function storageGet(key) {
-    try { return localStorage.getItem(key); } catch (e) { return null; }
+  if (!btn) return;
+
+  // 새로고침해도 접힌 상태를 기억
+  if (localStorage.getItem(STORAGE_KEY) === 'true') {
+    body.classList.add('sidebar-collapsed');
   }
 
-  function storageSet(key, val) {
-    try { localStorage.setItem(key, val); } catch (e) {}
-  }
-
-  function init() {
-    const sidebar = document.getElementById('sidebar');
-    if (!sidebar) return;
-
-    // 저장된 상태 복원
-    if (storageGet(STORAGE_KEY) === 'true') {
-      document.body.classList.add(COLLAPSED_CLASS);
-    }
-
-    // 토글 버튼 생성
-    const btn = document.createElement('button');
-    btn.id = 'sidebar-toggle-btn';
-    btn.setAttribute('aria-label', 'Toggle Sidebar');
-    btn.setAttribute('title', '사이드바 접기/펼치기');
-    btn.innerHTML = '<i class="fas fa-chevron-left"></i>';
-    document.body.appendChild(btn);
-
-    // 클릭 이벤트
-    btn.addEventListener('click', function () {
-      const isCollapsed = document.body.classList.toggle(COLLAPSED_CLASS);
-      storageSet(STORAGE_KEY, isCollapsed);
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
+  // 버튼 클릭 시 사이드바 접기/펴기 로직
+  btn.addEventListener('click', function () {
+    body.classList.toggle('sidebar-collapsed');
+    localStorage.setItem(STORAGE_KEY, body.classList.contains('sidebar-collapsed'));
+  });
 })();
