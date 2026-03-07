@@ -26,7 +26,19 @@ avatar: "/assets/img/ooopsu_main.jpg"
 toc: true
 
 comments:
-  provider:
+  provider: giscus
+  giscus:
+    repo: ooopsu/ooopsu.github.io
+    repo_id: R_kgDORf6FpQ
+    category: Announcements
+    category_id: DIC_kwDORf6Fpc4C33k0
+    mapping: pathname
+    strict: 0
+    reactions_enabled: 1
+    emit_metadata: 0
+    input_position: bottom
+    theme: dark
+    lang: ko
 
 paginate: 10
 baseurl: ""
