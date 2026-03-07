@@ -110,3 +110,7 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+head_scripts:
+  - /assets/js/sidebar-toggle.js
+  
