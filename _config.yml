@@ -4,7 +4,7 @@ lang: ko
 timezone: Asia/Seoul
 
 title: Ooopsu!
-tagline: 개인 컴퓨터 관련 잡다한 것들
+tagline: 잡다한 것들
 
 description: >-
   개인 컴퓨터 관련 잡다한 것들.
@@ -15,7 +15,7 @@ github:
   username: ooopsu
 
 social:
-  name: Ooopsu
+  name: ooopsu
   links:
     - https://github.com/ooopsu
 
