@@ -22,7 +22,7 @@ tags: [NVIDIA 쉐이더 캐시 파일 삭제하기]
 -   오른쪽 패널에서 쉐이더 캐시 사이즈를 찾아 비활성화를 선택합니다. 적용을 클릭하여 설정을 저장합니다.
 -   PC를 재부팅합니다.
 
-<img width="950" height="701" alt="1" src="_posts/img/cache_1.png" />
+<img width="950" height="701" alt="1" src="/_posts/img/cache_1.png" />
 
 
   
@@ -60,7 +60,7 @@ C:\Users\사용자명\AppData\Local\NVIDIA\DXCache
 -   '쉐이더 캐시 정리 (전용)' 버튼을 클릭합니다.  
       
     
-<img width="670" height="690" alt="2" src="_posts/img/cache_2.png" />
+<img width="670" height="690" alt="2" src="/_posts/img/cache_2.png" />
 
 정리가 완료되면 팝업 창이 나타납니다.  
 확인 후 NVIDIA 제어판에서 쉐이더 캐시 설정을 원래대로(기본값 또는 무제한) 복구하고 PC를 재부팅하면 완료됩니다.
